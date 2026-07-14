@@ -3,16 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Home - Ford</title>
+    <title>Página Home - ford</title>
     <link rel="stylesheet" href="/Desafio_2_sprint/style.css" />
-    <link rel="icon" type="image/x-icon" href="/Desafio_2_sprint/Fotos/favicon-1024x1024.avif">
+    <link rel="stylesheet" href="/Desafio_2_sprint/MediaQueries.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Desafio_2_sprint/Fotos/favicon-1024x1024.avif"
+    />
   </head>
   <body>
-    
     <header>
       <nav>
         <div class="links_nav">
-          <img class="logo" src="/Desafio_2_sprint/Fotos/Ford_logo.png" alt="foto_logo_ford" />
+          <img
+            class="logo"
+            src="/Desafio_2_sprint/Fotos/Ford_logo.png"
+            alt="foto_logo_ford"
+          />
           <ul class="links">
             <li><a class="link a" href="index.html">Home</a></li>
             <li><a class="link a" href="lancamento.html">Lançamento</a></li>
@@ -21,42 +29,56 @@
         </div>
       </nav>
     </header>
-    
-    <hr>
+
+    <hr />
 
     <main class="conteudo-principal">
-      
       <section class="sessao_carro">
         <span>
-          <img class="foto_centro" src="/Desafio_2_sprint/Fotos/imagem_1.jpg" alt="foto_ranger" />
-        </span>
-
-        <span class="texto_link">
+          <img
+            class="foto_centro"
+            src="/Desafio_2_sprint/Fotos/imagem_1.jpg"
+            alt="foto_ranger"
+          />
+          <span class="texto_link centralizar_btn">
           <h3>
-            Esta é a nova Ranger Ford 2022. Verifique novidades
-            <a href="lancamento.html">Aqui!</a>
+            Esta é a nova Ranger Ford 2022. Verifique novidades!
           </h3>
+           
         </span>
-      </section>
+        <div class="cont_btn">
+         <button>
+            <a href="lancamento.html"> Conferir aqui! </a>
+          </button>
+        </div>
+        </span>
 
+        
+      </section>
     </main>
 
     <footer class="footer rodape_home">
-      <div class="container"> <!-- Alterado de <main> para <div> para correção semântica -->
+      <main class="container">
         <div>
           <h3>Redes sociais</h3>
-          <a href="https://www.instagram.com/fordbrasil/" target="_blank"> <img class="icon" src="/Desafio_2_sprint/Fotos/instagram-logo-50.png" alt="img_instagram" /></a>
-          <a href="https://www.facebook.com/FordBrasil/" target="_blank"><img class="icon" src="/Desafio_2_sprint/Fotos/facebook-50.png" alt="img_facebook" /></a> 
-          <a href="https://www.youtube.com/fordbrasil" target="_blank"><img class="icon" src="/Desafio_2_sprint/Fotos/youtube-squared-50.png" alt="img_youtube" /></a>  
+          <a  href="https://www.instagram.com/fordbrasil/" target="_blank">
+            <img  class="icon" src="/Desafio_2_sprint/Fotos/instagram-logo-50.png" alt=""
+          /></a>
+          <a  href="https://www.facebook.com/FordBrasil/" target="_blank"
+            ><img class="icon" src="/Desafio_2_sprint/Fotos/facebook-50.png" alt=""
+          /></a>
+          <a href="https://www.youtube.com/fordbrasil" target="_blank"
+            ><img   class="icon" src="/Desafio_2_sprint/Fotos/youtube-squared-50.png" alt=""
+          /></a>
         </div>
-        
-        <a class="copy" href="https://www.ford.com.br/" target="_blank">Copyright © 2025 Ford Motor Company - Todos os direitos reservados</a>
+        <a class="copy" href="https://www.ford.com.br/" target="_blank"
+          >Copyright © 2025 Ford Motor Company - Todos os direitos reservados</a
+        >
 
         <div>
           <img src="/Desafio_2_sprint/Fotos/ford-96.png" alt="logo ford" />
         </div>
-      </div>
+      </main>
     </footer>
-
   </body>
 </html>
