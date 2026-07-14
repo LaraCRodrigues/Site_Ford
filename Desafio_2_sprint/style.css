@@ -12,7 +12,11 @@ html {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
+:root{
+    --cor_elementos: #5274C6;
+    --cor_paleta_ford: #003478 ;
+    --cor_hover: #334b82;
+}
 body {
     height: 90%;
     display: flex;
@@ -65,10 +69,9 @@ nav>div>ul>li>a {
 
     font-weight: 500;
 }
-.rodape_home {
-    margin-top: 20%;
-}
+
 /* sessao carro */
+
 
 
 .sessao_carro>span>img {
@@ -80,6 +83,7 @@ nav>div>ul>li>a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .sessao_carro>div,
@@ -94,16 +98,35 @@ a {
     justify-content: center;
     height: 10vh;
 }
-
+.centralizar_btn>button{
+    align-items: center;
+    background-color: var(--cor_elementos);
+    color: #fff;
+    padding: 10px;
+}
+.centralizar_btn>button>a{
+    text-decoration: none;
+}
+.cont_btn>button a{
+    color: #fff;
+    background-color: var(--cor_elementos);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+}
+.cont_btn{
+    padding-top: 50px;
+}
 /* footer */
 
 footer {
     background-color: #003478;
-    width: 100%;
     flex-shrink: 0;
 
 }
-
+.icon{
+    width: 30px;
+}
 .container {
     display: flex;
     align-items: center;
@@ -151,8 +174,8 @@ input[type="checkbox"] {
 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente no espaço que sobra */
-    align-items: center;     /* Centraliza horizontalmente */
+    justify-content: center; 
+    align-items: center;     
 }
 .container_iframe {
     display: flex;
@@ -253,12 +276,20 @@ span {
 
 .formulario>label {
     font-weight: 700;
+    padding-left: 56px;
+    align-items: center;
 }
 
 .flex_elementos {
     display: flex;
+       
 }
-
+.flex_elementos>.formulario{
+     background-color: #003478;
+        padding: 10px;
+        border-radius: 3px;
+        color: #fff;
+}
 .flex_elementos>img {
     width: 700px;
     height: auto;
@@ -288,103 +319,4 @@ span {
 section {
     margin: 10%;
     min-height: 36vh;
-}
-
-/* MEDIA QUERIES - mobile*/
-@media only screen and (max-width: 500px) {
-    
-    /* Navegação */
-    .links_nav > ul > li > a {
-        font-size: 15px;
-    }
-
-    nav > .links_nav {
-        display: flex; /* Adicionado para o align-items funcionar */
-        flex-direction: column; /* Garante que os links fiquem bem dispostos em telas pequenas */
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        font-size: 1rem;
-    }
-
-    /* Imagem Central (Corrigido o tamanho que vazava a tela) */
-    .foto_centro {
-        width: 100%;
-        max-width: 350px; /* Limita para não ficar gigante em celulares ligeiramente maiores */
-        height: auto;
-        margin-top: 40px; /* Troca de % por px para evitar comportamento imprevisível */
-    }
-
-    /* Textos */
-    .texto_link > h3 {
-        text-align: center;
-        /* Removido align-items pois text-align já resolve o alinhamento de texto */
-    }
-
-    /* Containers e Flexbox */
-    .container_cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px; /* Adicionado um espaçamento padrão entre os cards empilhados */
-    }
-
-    .flex_elementos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Imagem dentro do flex (Corrigido para não quebrar o layout) */
-    .flex_elementos > img {
-        width: 90%; /* Adapta-se à tela do celular sem estourar */
-        max-width: 350px;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .caixas > span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Imagem do carro (Corrigido o 120% que causava scroll lateral) */
-    .sessao_carro > span > img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Footer */
-    footer {
-        height: auto;
-        margin-top: 80px; /* Substituído os 70% por um espaçamento fixo mais seguro */
-    }
-
-    .copy {
-        font-size: 15px;
-        text-align: center; /* Bom para garantir que o copyright fique bonito no mobile */
-    }
-
-    a > .icon {
-        width: 30px;
-        height: auto;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column; /* Provavelmente você também vai querer empilhar o container geral no mobile */
-        align-items: center;
-        gap: 20px;
-    }
-}
-/* MEDIA QUERIES - 27pol computador*/
-/* Alvo: Telas de 27" QHD ou superiores */
-@media screen and (min-width: 2560px) {
-  body {
- 
-    max-width: 1800px;
-    margin: 0 auto;
-  }
 }
