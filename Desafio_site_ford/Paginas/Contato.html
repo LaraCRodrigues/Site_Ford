@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Contato - Ford enter</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/MediaQueries.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Desafio_2_sprint/Fotos/favicon-1024x1024.avif"
+    />
+    <link rel="stylesheet" href="/Desafio_2_sprint/MediaQueries.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="links_nav">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="/Fotos/Ford_logo.png"
+              alt="foto_logo_ford"
+            />
+          </a>
+
+          <ul class="links">
+            <li><a class="link a" href="index.html">Home</a></li>
+            <li><a class="link a" href="lancamento.html">Lançamento</a></li>
+            <li><a class="link a" href="Contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <hr />
+<!-- O CONTEÚDO PRINCIPAL (Englobando o formulário para resolver o problema do footer) -->
+    <main class="conteudo-principal">
+      
+      <section class="ssmodal">
+        <div class="container_modal">
+          <div class="flex_elementos">
+            <img
+              src="/Fotos/storm-contact.jpg.jpeg"
+              alt="foto_xls_2.2"
+            />
+            
+            <form action="" class="formulario">
+              <!-- Trocamos o <label> por uma <div> para organizar os campos corretamente -->
+              <div class="caixas">
+                <h4>Sobre Você:</h4>
+
+                <input type="text" placeholder="NOME" required />
+                <input type="email" placeholder="E-MAIL" required />
+                <input type="number" placeholder="CPF*" required />
+                <input type="text" placeholder="SOBRE NOME" />
+                <input type="tel" placeholder="TELEFONE" />
+                
+                <select name="contato" class="seletor">
+                  <option value="0">Como deseja ser contatado:</option>
+                  <option value="1">Elogio</option>
+                  <option value="2">Reclamação</option>
+                  <option value="3">Solicitação</option>
+                </select>
+
+                <!-- NOVO: Campo de Descrição (Textarea para textos maiores) -->
+                <textarea class="textarea_descricao" placeholder="Mensagem / Descrição" rows="4"></textarea>
+
+                <span class="btn_contato">
+                  <button type="submit">Enviar</button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- colocar target blank nos icones pra pg da ford -->
+
+    <footer class="footer rodape_contato">
+      <div class="container">
+        <div>
+          <h3>Redes sociais</h3>
+          <a href="https://www.instagram.com/fordbrasil/" target="_blank">
+            <img src="/Fotos/instagram-logo-50.png" alt=""
+          /></a>
+          <a href="https://www.facebook.com/FordBrasil/" target="_blank"
+            ><img src="/Fotos/facebook-50.png" alt=""
+          /></a>
+          <a href="https://www.youtube.com/fordbrasil" target="_blank"
+            ><img src="/Fotos/youtube-squared-50.png" alt=""
+          /></a>
+        </div>
+        <a class="copy" href="https://www.ford.com.br/" target="_blank"
+          >Copyright © 2025 Ford Motor Company - Todos os direitos reservados</a
+        >
+
+        <div>
+          <img src="/Fotos/ford-96.png" alt="logo ford" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
